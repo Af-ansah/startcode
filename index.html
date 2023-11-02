@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <input type="number" oninp ut=" gr adeCalculation()"> -->
+
+    <script>
+    // const courses = {math: "91",english:"70",science: "82"}
+
+    
+    // function gradeCalculation (marks){
+    //     let grade = "F"
+    //     if (marks >=80){return "A"
+    //     }else if (marks >=70 && marks <= 79) {return "B"    
+    //     } else if(marks >=60  && marks<=69){return "C"
+    //     }else if (marks >=50 && marks<= 59){return "D"
+    //     }else if (marks >=40 &&marks <=49){return "E"
+    //     }else {return "F"}
+
+    // }
+    //  let englishresult =  gradeCalculation(courses.english);
+    //  console.log("English grade = " + englishresult);
+    // let text = "We are the so-called \"Vikings\" from the north."
+    //    console.log(text)
+
+
+    //    let txt = "Apple, Banana, kiwi";
+    //    let part = txt.slice(-12);
+
+    //    console.log(part)
+
+
+
+    //write a program that calculates money spent in buying groceries and 
+    //find the respective items with the least price and highest price. 
+    //The program should contain each groceries name and price
+
+    const groceries = {
+        mango : 20,
+        rice : 40,
+        Milk  : 6.50,
+        Chicken : 35,
+        Bread : 3.50,
+        Apples: 8.00
+    }
+
+    // function moneySpent(){
+    //   let totalgroceries = 0;
+    //   for(let i in groceries){
+    //     totalgroceries += groceries[i];
+    //          }
+      
+    //   return totalgroceries
+        
+      
+    //    }
+    // let totalcost = moneySpent();
+    // console.log("The total cost of groceries is GHC" + totalcost)
+
+
+    // let maxPrice = Math.max(groceries);
+    // let minPrice = Math.min(groceries);
+    // console.log(`The maximum price of grocceries is ${maxPrice} and  the minimum price is ${minPrice}`);
+
+
+     //corrections
+     const grocArray = Object.values(groceries);
+     const sumOfgrocs =grocArray.reduce((previous, currentValue  ) => previous + currentValue);
+     console.log(sumOfgrocs);
+
+     const minGrocs = Math.min(...grocArray);
+     const maxGrocs = Math.max(...grocArray);
+     console.log(`The maximum price of grocceries is ${maxGrocs} and  the minimum price is ${minGrocs}`);
+
+
+
+/*Calculating the Body mass index (BMI)
+Body Mass Index (BMI) is a person’s weight in kilograms (or pounds)
+ divided by the square of height in meters (or feet). A high BMI can
+  indicate high body fatness. BMI screens for weight categories that may lead to health problems, 
+  but it does not diagnose the body fatness or health of an individual  of a body*/
+     var height = 1.75 ;
+     var weight = 75;
+     let heightSuared = height ** 2;
+     const  BMI = weight/heightSuared
+     console.log(BMI.toFixed(1))
+
+
+
+    // let maxItem ;
+    // let  leastItem = 0;
+    // function maxAndMin(){
+    
+       
+    //    for(let x in groceries){
+    //     if(groceries[x] > leastItem){
+    //        maxItem = groceries[x];
+    //     }else{
+    //       leastItem = groceries[x];
+    //     }
+    //     return maxItem;
+    //     return leastItem;
+    //   }
+    // }
+
+    // const leastMax = maxAndMin();
+    // console.log("The maximum price of item is " + maxItem  + " "+"and the least item is " + leastItem ) 
+   
+
+
+    // let tryOut = "Apple, Banana, Kiwi"
+    // let part = tryOut.substring(3)
+    // let whole = tryOut.slice(2,5)
+    // console.log(part)
+    // console.log(whole)
+
+
+    // let triming = "      Hello World     "
+    // let firstTrim = triming.trim();
+    // let secTrim = triming.trimStart();
+    // let thirdTrim = triming.trimEnd();
+    </script>
+</body></html>
